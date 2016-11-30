@@ -8,9 +8,18 @@
   <!--
     Your HTML content here
   -->  
-  hi
-  <md-divider></md-divider>
-  hello
+ <div layout="row" ng-controller="MyController">
+  <md-sidenav md-component-id="left" class="md-sidenav-left">
+    Left Nav!
+  </md-sidenav>
+
+  <md-content>
+    <md-button ng-click="openLeftMenu()">
+      Open Left Menu
+    </md-button>
+  </md-content>
+  </md-sidenav>
+</div>
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
@@ -20,6 +29,7 @@
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
   <script src="app.js"></script>
+  <script src="homeController.js"></script>
   <!-- Your application bootstrap  -->
   
   
