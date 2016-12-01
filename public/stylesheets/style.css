@@ -87,7 +87,6 @@ pre {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	padding-top: 50px;
 }
 
 .menudemoMenuWidth .md-menu-demo {
@@ -123,7 +122,24 @@ pre {
 	top: 0;
 	left: 0;
 }
-md-dialog {
-	min-width: 30em !important;  
-	min-height: 50em !important;
+
+.toolbar {
+	padding-left: 40%;
+	length: 150%;
 }
+
+.cardposi {
+	padding-left: 10%;
+	height: 210px;
+}
+
+.cardbgc {
+	background-color: beige;
+}
+
+md-dialog {
+	min-height:40em;
+	min-width:30em;
+}
+
+
