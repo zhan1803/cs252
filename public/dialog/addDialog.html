@@ -58,7 +58,27 @@
       <md-tab label="Travel Info">
         <form name="travelInfo">
             <div style="margin-top:50px">
-                <md-radio   
+                <div ng-app>
+
+                <md-radio-group ng-model="dialogVM.newPost.type" layout="row" layout-align="center center">
+                    <md-radio-button ng-value="roundtrip" class="ratio1pos" >Round Trip</md-radio-button>
+                    <md-radio-button ng-value="oneway"> One Way </md-radio-button>
+                </md-radio-group>
+                </div>
+                <md-input-container flex>
+                    <label>From</label>
+                    <input name="from" ng-model="dialogVM.newPost.from" required flex>
+                    <div ng-messages="addForm.from.$error">
+                        <div ng-message="required">This is required </div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex>
+                    <label>To</label>
+                    <input name="to" ng-model="dialogVM.newPost.to" required flex>
+                    <div ng-messages="addForm.to.$error">
+                        <div ng-message="required">This is required </div>
+                    </div>
+                </md-input-container>
             </div>
         </form>
       </md-tab>
