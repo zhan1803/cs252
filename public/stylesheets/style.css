@@ -3,11 +3,11 @@
  */
 
 body,html {
-	background-color: #3b4b54; width : 100%;
+	background-color: darkgrey; width : 100%;
 	height: 100%;
 	margin: 0 auto;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	color: #ffffff;
+	color: #3b4b54;
 }
 
 a {
@@ -80,3 +80,46 @@ pre {
 	margin: 0;
 }
 
+.sidenav {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding-top: 50px;
+}
+
+.menudemoMenuWidth .md-menu-demo {
+	padding: 24px;
+	min-height: 200px;
+}
+
+.menudemoMenuWidth .menu-demo-container {
+	min-height: 200px; }
+
+.md-button {
+	padding: 0 6px 0 6px;
+	margin: 6px 8px 6px 8px;
+	min-width: 88px;
+	border-radius: 3px;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:none;
+	border: none;
+	outline: none;
+}
+
+.btn1 {
+	background-color: beige;
+}
+
+.navcnt {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}

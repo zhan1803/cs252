@@ -1,25 +1,47 @@
 <html lang="en" >
 <head>
+    <title>Ride Share App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="stylesheets/style.css" rel="stylesheet" />
 </head>
 <body ng-app="rideShare" ng-cloak>
-  <!--
-    Your HTML content here
-  -->  
- <div layout="row" ng-controller="MyController">
-  <md-sidenav md-component-id="left" class="md-sidenav-left">
-    Left Nav!
+
+ <div layout="row" ng-controller="SideNavController" class="sidenav">
+  <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('min-width: 333px')">
+      <md-list>
+          <md-list-item ng-click="openOfferMenu()" class="btn1">
+              <p layout="row" layout-align="center">Ride Offer</p>
+          </md-list-item>
+          <md-list-item ng-click="openLookUpMenu()">
+              <p layout="row" layout-align="center">Ride Look Up</p>
+          </md-list-item>
+          <md-list-item ng-click="openAboutUsMenu()" class="btn1">
+              <p layout="row" layout-align="center">About Us</p>
+          </md-list-item>
+          <md-list-item ng-click="openContactMenu()">
+              <p layout="row" layout-align="center">Contact</p>
+          </md-list-item>
+      </md-list>
   </md-sidenav>
 
-  <md-content>
-    <md-button ng-click="openLeftMenu()">
-      Open Left Menu
-    </md-button>
+  <md-content class="navcnt">
+      <input layout-align="center center" type="text" ng-model="searchBox" placeholder="Search Ride Post">
+          <md-menu flex="33">
+              <md-button class="btn1" layout-align="right right">Create Post
+              </md-button>
+              <md-menu-content width="4">
+                  <md-menu-item class="md-menu-demo">
+                      <md-button ng-click=""> <span md-menu-align-target>Offer</span> </md-button>
+                      <md-button ng-click=""> <span md-menu-align-target>Look Up</span> </md-button>
+                  </md-menu-item>
+              </md-menu-content>
+          </md-menu>
   </md-content>
   </md-sidenav>
 </div>
+
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
@@ -31,7 +53,6 @@
   <script src="app.js"></script>
   <script src="homeController.js"></script>
   <!-- Your application bootstrap  -->
-  
-  
+
 </body>
 </html>
