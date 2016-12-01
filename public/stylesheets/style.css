@@ -123,3 +123,7 @@ pre {
 	top: 0;
 	left: 0;
 }
+md-dialog {
+	min-width: 30em !important;  
+	min-height: 50em !important;
+}

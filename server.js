@@ -16,10 +16,6 @@ const assert = require('assert');
 // We want to extract the port to publish our app on
 var port = process.env.PORT || 8080;
 
-// require mongoose for our mongodb
-var mongoose = require('mongoose');
-
-
 // Then we'll pull in the database client library
 var MongoClient = require("mongodb").MongoClient;
 
@@ -52,9 +48,7 @@ var mongodb;
 // connect to that URI, and also pass a number of SSL settings to the
 // call. Among those SSL settings is the SSL CA, into which we pass the array
 // wrapped and now decoded ca_certificate_base64,
-
-
-var option = {
+MongoClient.connect(credentials.uri, {
         mongos: {
             ssl: true,
             sslValidate: true,
@@ -62,28 +56,23 @@ var option = {
             poolSize: 1,
             reconnectTries: 1
         }
-
-}
-
-// If the connection throws an error
-mongoose.connection.on('error',function (err) {
-  console.log('Mongoose default connection error: ' + err);
-});
-
-mongoose.connection.on('open', function (err) {
-    assert.equal(null, err);
-    mongoose.connection.db.listCollections().toArray(function(err, collections) {
-        assert.equal(null, err);
-        collections.forEach(function(collection) {
-            console.log(collection);
-        });
-        mongoose.connection.db.close();
-        process.exit(0);
-    })
-});
-
-mongoose.connect(credentials.uri, options);
-
+    },
+    function(err, db) {
+        // Here we handle the async response. This is a simple example and
+        // we're not going to inject the database connection into the
+        // middleware, just save it in a global variable, as long as there
+        // isn't an error.
+        if (err) {
+            console.log(err);
+        } else {
+            // Although we have a connection, it's to the "admin" database
+            // of MongoDB deployment. In this example, we want the
+            // "examples" database so what we do here is create that
+            // connection using the current connection.
+            mongodb = db.db("examples");
+        }
+    }
+);
 
 // With the database going to be open as some point in the future, we can
 // now set up our web server. First up we set it to server static pages

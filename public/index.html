@@ -3,8 +3,15 @@
     <title>Ride Share App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-    <link href="stylesheets/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheets/lib/angular-material.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script type="text/javascript" src="lib/angular.min.js"></script>
+  <script type="text/javascript" src="lib/angular-animate.min.js"></script>
+  <script type="text/javascript" src="lib/angular-aria.min.js"></script>
+  <script type="text/javascript" src="lib/angular-material.min.js"></script>
+  <script src="app.js"></script>
+  <script src="homeController.js"></script>
+  <script src="dialog/addDialogController.js"></script>
 </head>
 <body ng-app="rideShare" ng-cloak>
 
@@ -29,7 +36,7 @@
   <md-content class="navcnt">
       <input layout-align="center center" type="text" ng-model="searchBox" placeholder="Search Ride Post">
           <md-menu flex="33">
-              <md-button class="btn1" layout-align="right right">Create Post
+              <md-button class="btn1" layout-align="right right" ng-click="showDialog()">Create Post
               </md-button>
               <md-menu-content width="4">
                   <md-menu-item class="md-menu-demo">
@@ -41,18 +48,5 @@
   </md-content>
   </md-sidenav>
 </div>
-
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-
-  <!-- Angular Material Library -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-  <script src="app.js"></script>
-  <script src="homeController.js"></script>
-  <!-- Your application bootstrap  -->
-
 </body>
 </html>
