@@ -79,9 +79,22 @@ MongoClient.connect(credentials.uri, {
 app.use(express.static(__dirname + '/public'));
 
 // Add words to the database
-app.put("/words", function(request, response) {
-  mongodb.collection("words").insertOne( {
-    word: request.body.word, definition: request.body.definition}, function(error, result) {
+app.put("/post", function(request, response) {
+  mongodb.collection("post").insertOne( {
+    firstName: request.body.newPost.firstName, 
+    lastName: request.body.newPost.lastName,
+    puid: request.body.newPost.puid,
+    email: request.body.newPost.email,
+    phone: request.body.newPost.phone,
+    type: request.body.newPost.type,
+    from: request.body.newPost.from,
+    to: request.body.newPost.to,
+    departure: request.body.newPost.departure,
+    return: request.body.newPost.return,
+    seats: request.body.newPost.seats,
+    comment: request.body.newPost.comment,
+    creation: request.body.newPost.creationTime
+  }, function(error, result) {
       if (error) {
         response.status(500).send(error);
       } else {
@@ -91,10 +104,10 @@ app.put("/words", function(request, response) {
 });
 
 // Then we create a route to handle our example database call
-app.get("/words", function(request, response) {
+app.get("/post", function(request, response) {
   // and we call on the connection to return us all the documents in the
   // words collection.
-  mongodb.collection("words").find().toArray(function(err, words) {
+  mongodb.collection("post").find().toArray(function(err, words) {
     if (err) {
      response.status(500).send(err);
     } else {
