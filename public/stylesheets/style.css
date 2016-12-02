@@ -142,6 +142,10 @@ pre {
 	padding-left: 10%;
 }
 
+.searchText {
+	color:white !important;
+	width: 200px;
+}
 .srch {
 	width: 400px;
 	padding-left: 370px;
@@ -166,8 +170,3 @@ pre {
 	background-color: lightgrey;
 }
 
-.searchtext md-input-container.md-default-theme .md-input, md-input-container .md-input {
-    color: white;
-    /* color: rgba(0,0,0,0.87); */
-    border-color: rgba(0,0,0,0.12);
-}
