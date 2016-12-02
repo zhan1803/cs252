@@ -45,26 +45,25 @@
 
  <div layout="row" ng-controller="homeController" class="sidenav">
      <div class="sidenavBgc1">
-  <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('min-width: 333px')">
-      <div class="sidenavBgc2">
-      <md-list>
-          <md-list-item ng-click="openOfferMenu()" class="btn1">
-              <p layout="row" layout-align="center">Ride Offer</p>
-          </md-list-item>
-          <md-list-item ng-click="openLookUpMenu()">
-              <p layout="row" layout-align="center">Ride Look Up</p>
-          </md-list-item>
-          <md-list-item ng-click="openAboutUsMenu()" class="btn1">
-              <p layout="row" layout-align="center">About Us</p>
-          </md-list-item>
-          <md-list-item ng-click="openContactMenu()">
-              <p layout="row" layout-align="center">Contact</p>
-          </md-list-item>
-      </md-list>
-      </div>
-  </md-sidenav>
-         </div>
-
+        <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('min-width: 333px')">
+            <div class="sidenavBgc2">
+                <md-list>
+                    <md-list-item ng-click="openOfferMenu()" class="btn1">
+                        <p layout="row" layout-align="center">Ride Offer</p>
+                    </md-list-item>
+                    <md-list-item ng-click="openLookUpMenu()">
+                        <p layout="row" layout-align="center">Ride Look Up</p>
+                    </md-list-item>
+                    <md-list-item ng-click="openAboutUsMenu()" class="btn1">
+                        <p layout="row" layout-align="center">About Us</p>
+                    </md-list-item>
+                    <md-list-item ng-click="openContactMenu()">
+                        <p layout="row" layout-align="center">Contact</p>
+                    </md-list-item>
+                </md-list>
+            </div>
+        </md-sidenav>
+     </div>
 
     <md-content class="navcnt">
         <div class="md-padding" layout-xs="column" layout="row" ng-repeat="post in posts">
