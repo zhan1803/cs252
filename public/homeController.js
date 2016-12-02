@@ -1,5 +1,5 @@
 var app = angular.module('rideShare');
-app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http,$timeout) {
+app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http,$timeout,$window) {
 
   $http.get('/post').then(function(data) {
         $scope.posts = data.data;
@@ -34,12 +34,23 @@ app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http,$ti
       }).then(function() {
         $timeout(function(){
             console.log('hi');
-            $http.get('/post').then(function(data) {
-               $scope.posts = data.data;
-            })
-        }, 1500)
+            $window.location.reload();
+        }, 200)
       })
 
+  }
+
+  $scope.showDetail = function(event, post) {
+      $mdDialog.show ({
+        controller: 'viewDialogController',
+        templateUrl: 'dialog/viewDialog.html',
+        targetEvent: event,
+        locals: {
+            post: post
+        },
+        controllerAs: 'viewDialogVM',
+        clickOutsideToClose:true
+      })
   }
 });
 

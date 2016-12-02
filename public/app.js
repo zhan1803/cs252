@@ -1,1 +1,1 @@
-angular.module('rideShare', ['ngMaterial']);
+angular.module('rideShare', ['ngMaterial','ui.router']);

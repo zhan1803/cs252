@@ -2,6 +2,7 @@
   "name": "RideShareApp",
   "version": "0.0.0",
   "dependencies": {
+    "angular-ui-router": "^0.3.2",
     "body-parser": "^1.15.2",
     "cf-deployment-tracker-client": "*",
     "cfenv": "^1.0.3",
