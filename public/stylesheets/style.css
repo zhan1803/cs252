@@ -121,6 +121,7 @@ pre {
 	z-index: 1;
 	top: 0;
 	left: 0;
+	background-color: cornsilk;
 }
 
 .cardposi {
@@ -147,4 +148,11 @@ pre {
 	padding-left: 370px;
 	padding-top: 40px;
 }
+.toolBgc {
+	background-color: burlywood;
+	width: 100%;
+}
 
+.srchfontc {
+	color: #ffffff;
+}
