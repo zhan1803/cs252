@@ -18,9 +18,12 @@
 
 <md-toolbar layout="row" class="md-hue-3" >
     <div  class="md-toolbar-tools">
-        <div class="toolbar">
-        <span><input type="text" ng-model="searchBox" placeholder="Search Ride Post"></span>
-        </div>
+
+        <md-input-container flex-gt-sm class="srch">
+            <label>Search Ride Post</label>
+            <input ng-model="search" placeholder="Search Ride Post">
+        </md-input-container>
+
         <md-menu md-offset="200 60">
             <md-button class="btn1" layout-align="right right" ng-click="$mdOpenMenu($event)">Create Post
             </md-button>
