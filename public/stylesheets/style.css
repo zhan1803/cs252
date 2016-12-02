@@ -142,7 +142,6 @@ pre {
 	padding-left: 10%;
 }
 
-
 .srch {
 	width: 400px;
 	padding-left: 370px;
@@ -160,5 +159,9 @@ pre {
 
 .sidenavBgc2 {
 	width: 260px;
+	background-color: lightgrey;
+}
+
+.dialogBgc {
 	background-color: lightgrey;
 }

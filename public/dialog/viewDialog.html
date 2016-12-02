@@ -1,7 +1,8 @@
 <md-dialog>
     <md-toolbar>
         <div class="md-toolbar-tools">
-            <h2>View Lookup</h2>
+            <h2 ng-if="....type=='lookup'">View Lookup Details</h2>
+            <h2 ng-if="....type=='offer'">View Offer Details</h2>
             <span flex></span>
         </div>
     </md-toolbar>
@@ -9,15 +10,37 @@
     <md-dialog-content class="md-padding">
         <md-tabs md-dynamic-height md-border-bottom>
             <md-tab label="Personal Info">
-
+                <div class="dialogClass">
+                    <div style="margin-top:50px" >
+                        <md-content flex layout-padding>
+                            <span class="md-headline">{{post.firstName}} {{post.lastName}}</span>
+                            <span class="md-headline">{{post.email}} </span>
+                            <span class="md-headline">{{post.phone}} </span>
+                        </md-content>
+                    </div>
+                </div>
             </md-tab>
 
             <md-tab label="Travel Info">
-
+                <div class="dialogClass">
+                    <div style="margin-top:50px" >
+                        <md-content flex layout-padding>
+                            <span class="md-headline">{{post.from}} {{post.to}}</span>
+                            <span class="md-headline">{{post.depature}} {{post.return}}</span>
+                            <span class="md-headline">{{post.numseats}} </span>
+                        </md-content>
+                    </div>
+                </div>
             </md-tab>
 
             <md-tab label="Comment">
-
+                <div class="dialogClass">
+                    <div style="margin-top:50px" >
+                        <md-content flex layout-padding>
+                            <p>{{post.comment}}</p>
+                        </md-content>
+                    </div>
+                </div>
             </md-tab>
         </md-tabs>
     </md-dialog-content>
