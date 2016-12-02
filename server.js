@@ -95,6 +95,7 @@ app.put("/post", function(request, response) {
     phone: request.body.phone,
     type: request.body.type,
     from: request.body.from,
+    trip: request.body.trip,
     to: request.body.to,
     departure: request.body.departure,
     return: request.body.return,

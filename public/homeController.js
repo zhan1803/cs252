@@ -1,5 +1,10 @@
 var app = angular.module('rideShare');
-app.controller('homeController', function($scope, $mdSidenav,$mdDialog) {
+app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http) {
+
+  $http.get('/post').then(function(data) {
+        $scope.posts = data.data;
+    })
+
   $scope.openLeftMenu = function() {
     $mdSidenav('left').toggle();
   };
@@ -16,13 +21,14 @@ app.controller('homeController', function($scope, $mdSidenav,$mdDialog) {
     $mdSidenav('contact').toggle();
   };
 
-
-
-  $scope.showDialog = function(event) {
+  $scope.showDialog = function(event,type) {
       $mdDialog.show({
         controller: 'addDialogController',
         templateUrl: 'dialog/addDialog.html',
         targetEvent: event,
+        locals: {
+            type: type
+        },
         controllerAs: 'dialogVM',
         clickOutsideToClose:true
       })
