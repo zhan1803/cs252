@@ -153,6 +153,12 @@ pre {
 	width: 100%;
 }
 
-.srchfontc {
-	color: #ffffff;
+.sidenavBgc1 {
+	width: 260px;
+	background-color: lightgrey;
+}
+
+.sidenavBgc2 {
+	width: 260px;
+	background-color: lightgrey;
 }

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cef42a7-e9a1-4738-90a3-12a6806aaaba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/pattern2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
     </list>
     <ignored path="cs252.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,27 +29,9 @@
       <file leaf-file-name="addDialog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/dialog/addDialog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addOffer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/dialog/addOffer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="884">
+              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -70,8 +50,10 @@
         <entry file="file://$PROJECT_DIR$/public/dialog/addDialogController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <marker date="1480656580667" expanded="true" signature="476:491" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
-              <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
+              <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -327,12 +309,12 @@
       <workItem from="1480638505069" duration="1059000" />
       <workItem from="1480639595030" duration="29000" />
       <workItem from="1480640316757" duration="297000" />
-      <workItem from="1480651863379" duration="3733000" />
+      <workItem from="1480651863379" duration="4784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35723000" />
+    <option name="totallyTimeSpent" value="36774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -396,11 +378,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -408,11 +386,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -420,46 +394,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dialog/viewDialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dialog/addDialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dialog/addOffer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
+            <marker date="1480656580667" expanded="true" signature="476:491" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -484,11 +420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -496,11 +428,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dialog/viewDialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dialog/addDialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dialog/addOffer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -524,11 +484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -600,13 +556,9 @@
     <entry file="file://$PROJECT_DIR$/public/dialog/viewLookUp.html" />
     <entry file="file://$PROJECT_DIR$/public/dialog/addDialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="884">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -614,19 +566,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#0;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#1;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#md-tab#2;n#md-tabs#0;n#md-dialog-content#0;n#md-dialog#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dialog/addDialogController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <marker date="1480656580667" expanded="true" signature="476:491" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,15 +591,15 @@
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
-          <caret line="166" column="1" selection-start-line="166" selection-start-column="1" selection-end-line="166" selection-end-column="1" />
+          <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding />
         </state>
       </provider>
