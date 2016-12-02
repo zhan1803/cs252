@@ -44,7 +44,9 @@
 
 
  <div layout="row" ng-controller="homeController" class="sidenav">
+     <div class="sidenavBgc1">
   <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('min-width: 333px')">
+      <div class="sidenavBgc2">
       <md-list>
           <md-list-item ng-click="openOfferMenu()" class="btn1">
               <p layout="row" layout-align="center">Ride Offer</p>
@@ -59,7 +61,11 @@
               <p layout="row" layout-align="center">Contact</p>
           </md-list-item>
       </md-list>
+      </div>
   </md-sidenav>
+         </div>
+
+
     <md-content class="navcnt">
 
         <!--
