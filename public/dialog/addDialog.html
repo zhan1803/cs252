@@ -51,7 +51,6 @@
                   <div ng-message="required">This is required </div>
                 </div>
             </md-input-container>
-
           </div>
           </form>
           <md-button ng-click="dialogVM.post()">TEst</md-button>
@@ -60,10 +59,10 @@
         <form name="travelInfo">
             <div style="margin-top:50px">
                 <div ng-app>
-
                 <md-radio-group ng-model="dialogVM.type" layout="row" layout-align="center center">
                     <md-radio-button value="RoundTrip">Round Trip</md-radio-button>
                     <md-radio-button value="OneWay"> One Way </md-radio-button>
+
                 </md-radio-group>
                 <md-datepicker ng-model="birthday"></md-datepicker>
                 </div>
@@ -74,6 +73,7 @@
                         <div ng-message="required">This is required </div>
                     </div>
                 </md-input-container>
+
                 <md-input-container flex>
                     <label>To</label>
                     <input name="to" ng-model="dialogVM.newPost.to" required flex>
@@ -81,12 +81,51 @@
                         <div ng-message="required">This is required </div>
                     </div>
                 </md-input-container>
+                <md-divider></md-divider>
+
+                <md-input-container flex>
+                    <label>Depature</label>
+                    <input name="depature" ng-model="dialogVM.newPost.depature" ng-pattern="/^[0-9]{2}[/][0-9][2][/][0-9]{4}$/" required flex placeholder="DD/MM/YYYY">
+                    <div ng-messages="addForm.depature.$error">
+                        <div ng-message="pattern"> Must be valid date </div>
+                        <div ng-message="required">This is required </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container flex>
+                    <label>Return</label>
+                    <input name="return" ng-model="dialogVM.newPost.return" ng-pattern="/^[0-9]{2}[/][0-9][2][/][0-9]{4}$/" required flex placeholder="DD/MM/YYYY">
+                    <div ng-messages="addForm.return.$error">
+                        <div ng-message="pattern"> Must be valid date </div>
+                        <div ng-message="required">This is required </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block" flex>
+                    <label>Number Of Seats</label>
+                    <input name="numseats" ng-model="dialogVM.newPost.numseats" type="number" required flex>
+                    <div ng-messages="addForm.numseats.$error">
+                        <div ng-message="type"> Must be valid number </div>
+                        <div ng-message="required">This is required </div>
+                    </div>
+                </md-input-container>
             </div>
         </form>
       </md-tab>
-      <md-tab></md-tab>
+        <md-tab label="Comment">
+            <form name="comment">
+                <div style="margin-top:50px">
+                    <md-input-container class="md-block">
+                        <label>Comment</label>
+                        <textarea name="comment" ng-model="dialogVM.newPost.comment" md-maxlength="150" rows="5" md-select-on-focus>
+                        </textarea>
+                    </md-input-container>
+                    <md-button class="btn1">
+                        Submit
+                    </md-button>
+                </div>
+            </form>
+        </md-tab>
     </md-tabs>
   </md-dialog-content>
-
-
 </md-dialog>
