@@ -22,7 +22,7 @@ app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http) {
   };
 
   $scope.showDialog = function(event,type) {
-      $mdDialog.show({
+      $mdDialog.show ({
         controller: 'addDialogController',
         templateUrl: 'dialog/addDialog.html',
         targetEvent: event,
