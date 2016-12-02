@@ -6,7 +6,13 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+// parse application/json
+app.use(bodyParser.json())
 
+// parse application/vnd.api+json as json
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
+// With the database going to be open as some point in the future, we can
+// now set up our web server. First up we set it to server static pages
 
 // Util is handy to have around, so thats why that's here.
 const util = require('util')
@@ -69,31 +75,32 @@ MongoClient.connect(credentials.uri, {
             // of MongoDB deployment. In this example, we want the
             // "examples" database so what we do here is create that
             // connection using the current connection.
-            mongodb = db.db("examples");
+            mongodb = db.db("posts");
         }
     }
 );
 
-// With the database going to be open as some point in the future, we can
-// now set up our web server. First up we set it to server static pages
+
+
+
 app.use(express.static(__dirname + '/public'));
 
 // Add words to the database
 app.put("/post", function(request, response) {
   mongodb.collection("post").insertOne( {
-    firstName: request.body.newPost.firstName, 
-    lastName: request.body.newPost.lastName,
-    puid: request.body.newPost.puid,
-    email: request.body.newPost.email,
-    phone: request.body.newPost.phone,
-    type: request.body.newPost.type,
-    from: request.body.newPost.from,
-    to: request.body.newPost.to,
-    departure: request.body.newPost.departure,
-    return: request.body.newPost.return,
-    seats: request.body.newPost.seats,
-    comment: request.body.newPost.comment,
-    creation: request.body.newPost.creationTime
+    firstName: request.body.firstName,
+    lastName: request.body.lastName,
+    puid: request.body.puid,
+    email: request.body.email,
+    phone: request.body.phone,
+    type: request.body.type,
+    from: request.body.from,
+    to: request.body.to,
+    departure: request.body.departure,
+    return: request.body.return,
+    seats: request.body.seats,
+    comment: request.body.comment,
+    creation: request.body.creationTime
   }, function(error, result) {
       if (error) {
         response.status(500).send(error);
