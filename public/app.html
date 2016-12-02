@@ -1,12 +1,10 @@
 
 
-<md-toolbar layout="row" class="md-hue-3">
+<md-toolbar layout="row" class="md-hue-3" md-whiteframe="3">
     <div class="toolBgc">
         <div  class="md-toolbar-tools">
-
-            <md-input-container flex-gt-sm class="srch">
-                <label>Search Ride Post</label>
-                <input ng-model="search" placeholder="Search Ride Post">
+            <md-input-container flex-gt-sm class="searchText src">
+                <input ng-model="searchText" placeholder="Search Ride Post">
             </md-input-container>
 
             <md-menu md-offset="200 60">
@@ -48,7 +46,7 @@
     </div>
 
 <md-content class="navcnt" ng-controller="homeController">
-    <div class="md-padding" layout-xs="column" layout="row" ng-repeat="post in posts">
+    <div class="md-padding" layout-xs="column" layout="row" ng-repeat="post in posts | filter: searchText">
         <div flex-xs flex-gt-xs="80" layout="column" class="cardposi">
             <md-card ng-click="null" class="cardbgc">
                 <md-card-title>
