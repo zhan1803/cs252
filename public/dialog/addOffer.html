@@ -1,0 +1,128 @@
+<md-dialog>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Add Offer</h2>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+
+    <md-dialog-content class="md-padding">
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="Personal Info">
+                <form name="addForm">
+                    <div style="margin-top:50px">
+                        <md-input-container flex>
+                            <label>First Name</label>
+                            <input name="firstName" ng-model="dialogVM.newPost.firstName" required flex>
+                            <div ng-messages="addForm.firstName.$error">
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container flex>
+                            <label>Last Name</label>
+                            <input name="lastName" ng-model="dialogVM.newPost.lastName" required flex>
+                            <div ng-messages="addForm.lastName.$error">
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-block" flex>
+                            <label>Email</label>
+                            <input name="email" ng-model="dialogVM.newPost.email" type="email" required flex>
+                            <div ng-messages="addForm.email.$error">
+                                <div ng-message="type"> Must be valid email </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container class="md-block" flex>
+                            <label>PUID</label>
+                            <input name="puid" ng-model="dialogVM.newPost.puid" type="number" required flex>
+                            <div ng-messages="addForm.puid.$error">
+                                <div ng-message="type"> Must be valid Purdue ID </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container class="md-block" flex>
+                            <label>Phone Number</label>
+                            <input name="phone" ng-model="dialogVM.newPost.phone" ng-pattern="/^[0-9]{10}$/" type="number" required flex>
+                            <div ng-messages="addForm.phone.$error">
+                                <div ng-message="pattern"> Must be valid Phone Number </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                </form>
+            </md-tab>
+            <md-tab label="Travel Info">
+                <form name="travelInfo">
+                    <div style="margin-top:50px">
+                        <div ng-app>
+                            <md-radio-group ng-model="dialogVM.newPost.type" layout="row" layout-align="center center">
+                                <md-radio-button ng-value="roundtrip" class="md-primary" >Round Trip</md-radio-button>
+                                <md-radio-button ng-value="oneway"> One Way </md-radio-button>
+                            </md-radio-group>
+                        </div>
+                        <md-input-container flex>
+                            <label>From</label>
+                            <input name="from" ng-model="dialogVM.newPost.from" required flex>
+                            <div ng-messages="addForm.from.$error">
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label>To</label>
+                            <input name="to" ng-model="dialogVM.newPost.to" required flex>
+                            <div ng-messages="addForm.to.$error">
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+                        <md-divider></md-divider>
+
+                        <md-input-container flex>
+                            <label>Depature</label>
+                            <input name="depature" ng-model="dialogVM.newPost.depature" ng-pattern="/^[0-9]{2}[/][0-9][2][/][0-9]{4}$/" required flex placeholder="DD/MM/YYYY">
+                            <div ng-messages="addForm.depature.$error">
+                                <div ng-message="pattern"> Must be valid date </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container flex>
+                            <label>Return</label>
+                            <input name="return" ng-model="dialogVM.newPost.return" ng-pattern="/^[0-9]{2}[/][0-9][2][/][0-9]{4}$/" required flex placeholder="DD/MM/YYYY">
+                            <div ng-messages="addForm.return.$error">
+                                <div ng-message="pattern"> Must be valid date </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container class="md-block" flex>
+                            <label>Number Of Seats</label>
+                            <input name="numseats" ng-model="dialogVM.newPost.numseats" type="number" required flex>
+                            <div ng-messages="addForm.numseats.$error">
+                                <div ng-message="type"> Must be valid number </div>
+                                <div ng-message="required">This is required </div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                </form>
+            </md-tab>
+            <md-tab label="Comment">
+                <form name="comment">
+                    <div style="margin-top:50px">
+                        <md-input-container class="md-block">
+                            <label>Comment</label>
+                            <textarea name="comment" ng-model="dialogVM.newPost.comment" md-maxlength="150" rows="5" md-select-on-focus>
+                        </textarea>
+                        </md-input-container>
+                        <md-button class="btn1">
+                            Submit
+                        </md-button>
+                    </div>
+                </form>
+            </md-tab>
+        </md-tabs>
+    </md-dialog-content>
+</md-dialog>
