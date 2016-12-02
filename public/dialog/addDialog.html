@@ -53,14 +53,16 @@
             </md-input-container>
           </div>
           </form>
+          <md-button ng-click="dialogVM.post()">TEst</md-button>
       </md-tab>
       <md-tab label="Travel Info">
         <form name="travelInfo">
             <div style="margin-top:50px">
                 <div ng-app>
-                <md-radio-group ng-model="dialogVM.newPost.type" layout="row" layout-align="center center">
-                    <md-radio-button ng-value="roundtrip" class="md-primary" >Round Trip</md-radio-button>
-                    <md-radio-button ng-value="oneway"> One Way </md-radio-button>
+                <md-radio-group ng-model="dialogVM.type" layout="row" layout-align="center center">
+                    <md-radio-button value="RoundTrip">Round Trip</md-radio-button>
+                    <md-radio-button value="OneWay"> One Way </md-radio-button>
+
                 </md-radio-group>
                 </div>
                 <md-input-container flex>

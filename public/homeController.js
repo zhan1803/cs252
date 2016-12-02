@@ -19,7 +19,6 @@ app.controller('homeController', function($scope, $mdSidenav,$mdDialog) {
 
 
   $scope.showDialog = function(event) {
-    console.log('hi')
       $mdDialog.show({
         controller: 'addDialogController',
         templateUrl: 'dialog/addDialog.html',
