@@ -3,5 +3,6 @@
 	.controller('viewDialogController', function($http,$mdDialog,$filter,post) {
 		var vm = this;
 		vm.post = post;
+		console.log(vm.post)
 	});
 })()
