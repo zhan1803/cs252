@@ -32,10 +32,10 @@
         <md-sidenav md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('min-width: 333px')">
             <div class="sidenavBgc2">
                 <md-list>
-                    <md-list-item ng-click="searchText='offer'" class="btn1">
+                    <md-list-item ng-click="type='offer'" class="btn1">
                         <p layout="row" layout-align="center">Ride Offer</p>
                     </md-list-item>
-                    <md-list-item ng-click="searchText='lookup'">
+                    <md-list-item ng-click="type='lookup'">
                         <p layout="row" layout-align="center">Ride Look Up</p>
                     </md-list-item>          
                 </md-list>
@@ -45,7 +45,7 @@
 
 <md-content class="navcnt" ng-controller="homeController">
     <div class="md-padding" layout-xs="column" layout="row" ng-repeat="post in posts | filter: searchText">
-        <div flex-xs flex-gt-xs="80" layout="column" class="cardposi">
+        <div flex-xs flex-gt-xs="80" layout="column" class="cardposi" ng-if="post.type==type">
             <md-card ng-click="null" class="cardbgc">
                 <md-card-title>
                     <md-card-title-text>
@@ -54,13 +54,15 @@
                     </md-card-title-text>
                 </md-card-title>
                 <md-card-title>
-                    <md-card-title-text>
-                        <span class="md-headline">{{post.from}}      {{post.to}}</span>
+                    <md-card-title-text layout="column">
+                        <span class="md-headline">From: {{post.from}}</span>
+                        <span class="md-headline">To:{{post.to}}</span>
                     </md-card-title-text>
                 </md-card-title>
                 <md-card-title>
                     <md-card-title-text>
-                        <span class="md-headline">{{post.departure}} {{post.return}}</span>
+                        <span class="md-headline">Departure:{{post.departure}}</span>
+                        <span class="md-headline" ng-if="post.trip=='RoundTrip'"> {{post.return}}</span>
                     </md-card-title-text>
                 </md-card-title>
                 <md-card-actions layout="row" layout-align="end center">

@@ -5,6 +5,8 @@ app.controller('homeController', function($scope, $mdSidenav,$mdDialog,$http,$ti
         $scope.posts = data.data;
     })
 
+  $scope.type='lookup';
+
   $scope.openLeftMenu = function() {
     $mdSidenav('left').toggle();
   };
